@@ -26,13 +26,16 @@ export default function ServicesPage() {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
-            <section className="w-full py-12 md:py-24 lg:py-32 bg-zinc-100 dark:bg-zinc-800">
+            <section
+                className="w-full  items-center justify-center py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-900 to-slate-700 text-white max-w-[1536px] mx-auto">
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
-                            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Auto Repair Services</h1>
+                            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Auto Repair
+                                Services</h1>
                             <p className="max-w-[700px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400">
-                                Comprehensive auto repair and maintenance services for all makes and models. From routine maintenance to
+                                Comprehensive auto repair and maintenance services for all makes and models. From
+                                routine maintenance to
                                 major repairs, our certified technicians do it all.
                             </p>
                         </div>
@@ -54,12 +57,13 @@ export default function ServicesPage() {
                                 />
                             </div>
                             <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                                <Wrench className="h-8 w-8 text-red-600" />
+                                <Wrench className="h-8 w-8 text-red-600"/>
                                 <CardTitle>General Repairs</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                                    From minor fixes to major repairs, our expert technicians handle it all with precision. We diagnose
+                                    From minor fixes to major repairs, our expert technicians handle it all with
+                                    precision. We diagnose
                                     and repair issues with your vehicle's mechanical and electrical systems.
                                 </p>
                                 <ul className="mt-4 space-y-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -81,15 +85,17 @@ export default function ServicesPage() {
 
                         <Card className="overflow-hidden">
                             <div className="relative h-48">
-                                <Image src="/placeholder.svg?height=200&width=400" alt="Engine Service" fill className="object-cover" />
+                                <Image src="/placeholder.svg?height=200&width=400" alt="Engine Service" fill
+                                       className="object-cover"/>
                             </div>
                             <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                                <Settings className="h-8 w-8 text-red-600" />
+                                <Settings className="h-8 w-8 text-red-600"/>
                                 <CardTitle>Engine Service</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                                    Comprehensive engine diagnostics, repair, and maintenance to keep your engine running smoothly. We
+                                    Comprehensive engine diagnostics, repair, and maintenance to keep your engine
+                                    running smoothly. We
                                     handle everything from tune-ups to complete engine rebuilds.
                                 </p>
                                 <ul className="mt-4 space-y-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -111,15 +117,17 @@ export default function ServicesPage() {
 
                         <Card className="overflow-hidden">
                             <div className="relative h-48">
-                                <Image src="/placeholder.svg?height=200&width=400" alt="Brake Service" fill className="object-cover" />
+                                <Image src="/placeholder.svg?height=200&width=400" alt="Brake Service" fill
+                                       className="object-cover"/>
                             </div>
                             <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                                <Tool className="h-8 w-8 text-red-600" />
+                                <Tool className="h-8 w-8 text-red-600"/>
                                 <CardTitle>Brake Service</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                                    Inspection, repair, and replacement of brake pads, rotors, and complete brake systems. Your safety is
+                                    Inspection, repair, and replacement of brake pads, rotors, and complete brake
+                                    systems. Your safety is
                                     our top priority.
                                 </p>
                                 <ul className="mt-4 space-y-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -149,12 +157,13 @@ export default function ServicesPage() {
                                 />
                             </div>
                             <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                                <Car className="h-8 w-8 text-red-600" />
+                                <Car className="h-8 w-8 text-red-600"/>
                                 <CardTitle>Transmission</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                                    Transmission fluid changes, repairs, and complete rebuilds for manual and automatic transmissions.
+                                    Transmission fluid changes, repairs, and complete rebuilds for manual and automatic
+                                    transmissions.
                                     Keep your transmission shifting smoothly.
                                 </p>
                                 <ul className="mt-4 space-y-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -184,12 +193,13 @@ export default function ServicesPage() {
                                 />
                             </div>
                             <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                                <Shield className="h-8 w-8 text-red-600" />
+                                <Shield className="h-8 w-8 text-red-600"/>
                                 <CardTitle>Preventive Maintenance</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                                    Regular maintenance to prevent costly repairs and extend the life of your vehicle. Stay ahead of
+                                    Regular maintenance to prevent costly repairs and extend the life of your vehicle.
+                                    Stay ahead of
                                     potential issues.
                                 </p>
                                 <ul className="mt-4 space-y-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -211,15 +221,17 @@ export default function ServicesPage() {
 
                         <Card className="overflow-hidden">
                             <div className="relative h-48">
-                                <Image src="/placeholder.svg?height=200&width=400" alt="Diagnostics" fill className="object-cover" />
+                                <Image src="/placeholder.svg?height=200&width=400" alt="Diagnostics" fill
+                                       className="object-cover"/>
                             </div>
                             <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                                <Clock className="h-8 w-8 text-red-600" />
+                                <Clock className="h-8 w-8 text-red-600"/>
                                 <CardTitle>Diagnostics</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                                    Advanced computer diagnostics to identify and resolve complex vehicle issues. We use the latest
+                                    Advanced computer diagnostics to identify and resolve complex vehicle issues. We use
+                                    the latest
                                     diagnostic tools.
                                 </p>
                                 <ul className="mt-4 space-y-2 text-sm text-zinc-500 dark:text-zinc-400">
@@ -255,42 +267,42 @@ export default function ServicesPage() {
                     </div>
                     <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
                         <div className="flex flex-col items-center space-y-2 border p-6 rounded-lg">
-                            <Gauge className="h-12 w-12 text-red-600" />
+                            <Gauge className="h-12 w-12 text-red-600"/>
                             <h3 className="text-xl font-bold">Tire Services</h3>
                             <p className="text-center text-zinc-500 dark:text-zinc-400">
                                 Tire rotation, balancing, alignment, and new tire installation.
                             </p>
                         </div>
                         <div className="flex flex-col items-center space-y-2 border p-6 rounded-lg">
-                            <BatteryCharging className="h-12 w-12 text-red-600" />
+                            <BatteryCharging className="h-12 w-12 text-red-600"/>
                             <h3 className="text-xl font-bold">Battery Service</h3>
                             <p className="text-center text-zinc-500 dark:text-zinc-400">
                                 Battery testing, charging, and replacement services.
                             </p>
                         </div>
                         <div className="flex flex-col items-center space-y-2 border p-6 rounded-lg">
-                            <AirVent className="h-12 w-12 text-red-600" />
+                            <AirVent className="h-12 w-12 text-red-600"/>
                             <h3 className="text-xl font-bold">A/C Service</h3>
                             <p className="text-center text-zinc-500 dark:text-zinc-400">
                                 A/C recharge, repair, and system maintenance.
                             </p>
                         </div>
                         <div className="flex flex-col items-center space-y-2 border p-6 rounded-lg">
-                            <Thermometer className="h-12 w-12 text-red-600" />
+                            <Thermometer className="h-12 w-12 text-red-600"/>
                             <h3 className="text-xl font-bold">Cooling System</h3>
                             <p className="text-center text-zinc-500 dark:text-zinc-400">
                                 Radiator service, coolant flush, and leak repairs.
                             </p>
                         </div>
                         <div className="flex flex-col items-center space-y-2 border p-6 rounded-lg">
-                            <Droplet className="h-12 w-12 text-red-600" />
+                            <Droplet className="h-12 w-12 text-red-600"/>
                             <h3 className="text-xl font-bold">Fluid Services</h3>
                             <p className="text-center text-zinc-500 dark:text-zinc-400">
                                 Complete fluid flushes and replacements for all systems.
                             </p>
                         </div>
                         <div className="flex flex-col items-center space-y-2 border p-6 rounded-lg">
-                            <Settings className="h-12 w-12 text-red-600" />
+                            <Settings className="h-12 w-12 text-red-600"/>
                             <h3 className="text-xl font-bold">State Inspections</h3>
                             <p className="text-center text-zinc-500 dark:text-zinc-400">
                                 Official state safety and emissions inspections.
@@ -305,7 +317,8 @@ export default function ServicesPage() {
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
-                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to Get Your Vehicle Serviced?</h2>
+                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to Get Your Vehicle
+                                Serviced?</h2>
                             <p className="max-w-[600px] text-zinc-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                 Schedule your appointment today and experience the difference quality service makes.
                             </p>

@@ -27,7 +27,8 @@ export default function BookingPage() {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
-            <section className="w-full py-12 md:py-24 lg:py-32 bg-zinc-100 dark:bg-zinc-800">
+            <section
+                className="w-full items-center justify-center py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-900 to-slate-700 text-white max-w-[1536px] mx-auto">
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
@@ -47,7 +48,8 @@ export default function BookingPage() {
                         <div className="mx-auto max-w-3xl">
                             <div className="mb-8">
                                 <div className="flex items-center justify-between mb-4">
-                                    <div className={`flex items-center ${step >= 1 ? "text-red-600" : "text-zinc-400"}`}>
+                                    <div
+                                        className={`flex items-center ${step >= 1 ? "text-red-600" : "text-zinc-400"}`}>
                                         <div
                                             className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${step >= 1 ? "border-red-600 bg-red-600 text-white" : "border-zinc-300"}`}
                                         >
@@ -56,7 +58,8 @@ export default function BookingPage() {
                                         <span className="ml-2 font-medium">Service Details</span>
                                     </div>
                                     <div className={`h-0.5 w-16 ${step >= 2 ? "bg-red-600" : "bg-zinc-300"}`}></div>
-                                    <div className={`flex items-center ${step >= 2 ? "text-red-600" : "text-zinc-400"}`}>
+                                    <div
+                                        className={`flex items-center ${step >= 2 ? "text-red-600" : "text-zinc-400"}`}>
                                         <div
                                             className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${step >= 2 ? "border-red-600 bg-red-600 text-white" : "border-zinc-300"}`}
                                         >
@@ -65,7 +68,8 @@ export default function BookingPage() {
                                         <span className="ml-2 font-medium">Personal Info</span>
                                     </div>
                                     <div className={`h-0.5 w-16 ${step >= 3 ? "bg-red-600" : "bg-zinc-300"}`}></div>
-                                    <div className={`flex items-center ${step >= 3 ? "text-red-600" : "text-zinc-400"}`}>
+                                    <div
+                                        className={`flex items-center ${step >= 3 ? "text-red-600" : "text-zinc-400"}`}>
                                         <div
                                             className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${step >= 3 ? "border-red-600 bg-red-600 text-white" : "border-zinc-300"}`}
                                         >
@@ -88,7 +92,7 @@ export default function BookingPage() {
                                             </label>
                                             <Select>
                                                 <SelectTrigger id="service-type">
-                                                    <SelectValue placeholder="Select a service" />
+                                                    <SelectValue placeholder="Select a service"/>
                                                 </SelectTrigger>
                                                 <SelectContent>
                                                     <SelectItem value="oil-change">Oil Change</SelectItem>
@@ -119,12 +123,13 @@ export default function BookingPage() {
                                                             !date && "text-muted-foreground",
                                                         )}
                                                     >
-                                                        <CalendarIcon className="mr-2 h-4 w-4" />
+                                                        <CalendarIcon className="mr-2 h-4 w-4"/>
                                                         {date ? format(date, "PPP") : <span>Select a date</span>}
                                                     </Button>
                                                 </PopoverTrigger>
                                                 <PopoverContent className="w-auto p-0">
-                                                    <Calendar mode="single" selected={date} onSelect={setDate} initialFocus />
+                                                    <Calendar mode="single" selected={date} onSelect={setDate}
+                                                              initialFocus/>
                                                 </PopoverContent>
                                             </Popover>
                                         </div>
@@ -138,7 +143,7 @@ export default function BookingPage() {
                                             </label>
                                             <Select>
                                                 <SelectTrigger id="time">
-                                                    <SelectValue placeholder="Select a time" />
+                                                    <SelectValue placeholder="Select a time"/>
                                                 </SelectTrigger>
                                                 <SelectContent>
                                                     <SelectItem value="8:00">8:00 AM</SelectItem>
@@ -162,7 +167,7 @@ export default function BookingPage() {
                                             >
                                                 Vehicle Year
                                             </label>
-                                            <Input id="vehicle-year" placeholder="2018" />
+                                            <Input id="vehicle-year" placeholder="2018"/>
                                         </div>
 
                                         <div className="space-y-2">
@@ -172,7 +177,7 @@ export default function BookingPage() {
                                             >
                                                 Vehicle Make
                                             </label>
-                                            <Input id="vehicle-make" placeholder="Toyota" />
+                                            <Input id="vehicle-make" placeholder="Toyota"/>
                                         </div>
 
                                         <div className="space-y-2">
@@ -182,7 +187,7 @@ export default function BookingPage() {
                                             >
                                                 Vehicle Model
                                             </label>
-                                            <Input id="vehicle-model" placeholder="Camry" />
+                                            <Input id="vehicle-model" placeholder="Camry"/>
                                         </div>
 
                                         <div className="space-y-2">
@@ -199,7 +204,8 @@ export default function BookingPage() {
                                             />
                                         </div>
 
-                                        <Button type="button" className="w-full bg-red-600 hover:bg-red-700" onClick={() => setStep(2)}>
+                                        <Button type="button" className="w-full bg-red-600 hover:bg-red-700"
+                                                onClick={() => setStep(2)}>
                                             Next Step
                                         </Button>
                                     </div>
@@ -215,7 +221,7 @@ export default function BookingPage() {
                                                 >
                                                     First Name
                                                 </label>
-                                                <Input id="first-name" placeholder="John" required />
+                                                <Input id="first-name" placeholder="John" required/>
                                             </div>
                                             <div className="space-y-2">
                                                 <label
@@ -224,7 +230,7 @@ export default function BookingPage() {
                                                 >
                                                     Last Name
                                                 </label>
-                                                <Input id="last-name" placeholder="Doe" required />
+                                                <Input id="last-name" placeholder="Doe" required/>
                                             </div>
                                         </div>
 
@@ -235,7 +241,7 @@ export default function BookingPage() {
                                             >
                                                 Email
                                             </label>
-                                            <Input id="email" type="email" placeholder="john.doe@example.com" required />
+                                            <Input id="email" type="email" placeholder="john.doe@example.com" required/>
                                         </div>
 
                                         <div className="space-y-2">
@@ -245,7 +251,7 @@ export default function BookingPage() {
                                             >
                                                 Phone
                                             </label>
-                                            <Input id="phone" type="tel" placeholder="(555) 123-4567" required />
+                                            <Input id="phone" type="tel" placeholder="(555) 123-4567" required/>
                                         </div>
 
                                         <div className="space-y-2">
@@ -255,7 +261,7 @@ export default function BookingPage() {
                                             >
                                                 Address
                                             </label>
-                                            <Input id="address" placeholder="123 Main St" />
+                                            <Input id="address" placeholder="123 Main St"/>
                                         </div>
 
                                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -266,7 +272,7 @@ export default function BookingPage() {
                                                 >
                                                     City
                                                 </label>
-                                                <Input id="city" placeholder="Anytown" />
+                                                <Input id="city" placeholder="Anytown"/>
                                             </div>
                                             <div className="space-y-2">
                                                 <label
@@ -275,7 +281,7 @@ export default function BookingPage() {
                                                 >
                                                     State
                                                 </label>
-                                                <Input id="state" placeholder="CA" />
+                                                <Input id="state" placeholder="CA"/>
                                             </div>
                                             <div className="space-y-2">
                                                 <label
@@ -284,7 +290,7 @@ export default function BookingPage() {
                                                 >
                                                     ZIP Code
                                                 </label>
-                                                <Input id="zip" placeholder="12345" />
+                                                <Input id="zip" placeholder="12345"/>
                                             </div>
                                         </div>
 
@@ -303,10 +309,12 @@ export default function BookingPage() {
                                         </div>
 
                                         <div className="flex gap-4">
-                                            <Button type="button" variant="outline" className="flex-1" onClick={() => setStep(1)}>
+                                            <Button type="button" variant="outline" className="flex-1"
+                                                    onClick={() => setStep(1)}>
                                                 Back
                                             </Button>
-                                            <Button type="button" className="flex-1 bg-red-600 hover:bg-red-700" onClick={() => setStep(3)}>
+                                            <Button type="button" className="flex-1 bg-red-600 hover:bg-red-700"
+                                                    onClick={() => setStep(3)}>
                                                 Next Step
                                             </Button>
                                         </div>
@@ -320,11 +328,13 @@ export default function BookingPage() {
                                             <div className="space-y-4">
                                                 <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                                                     <div>
-                                                        <p className="text-sm font-medium text-zinc-500">Service Type:</p>
+                                                        <p className="text-sm font-medium text-zinc-500">Service
+                                                            Type:</p>
                                                         <p>Oil Change</p>
                                                     </div>
                                                     <div>
-                                                        <p className="text-sm font-medium text-zinc-500">Date & Time:</p>
+                                                        <p className="text-sm font-medium text-zinc-500">Date &
+                                                            Time:</p>
                                                         <p>{date ? format(date, "PPP") : "Not selected"} at 10:00 AM</p>
                                                     </div>
                                                 </div>
@@ -343,7 +353,8 @@ export default function BookingPage() {
                                                     <p>john.doe@example.com | (555) 123-4567</p>
                                                 </div>
                                                 <div>
-                                                    <p className="text-sm font-medium text-zinc-500">Service Details:</p>
+                                                    <p className="text-sm font-medium text-zinc-500">Service
+                                                        Details:</p>
                                                     <p>Regular oil change with synthetic oil and filter replacement.</p>
                                                 </div>
                                             </div>
@@ -371,7 +382,8 @@ export default function BookingPage() {
                                         </div>
 
                                         <div className="flex gap-4">
-                                            <Button type="button" variant="outline" className="flex-1" onClick={() => setStep(2)}>
+                                            <Button type="button" variant="outline" className="flex-1"
+                                                    onClick={() => setStep(2)}>
                                                 Back
                                             </Button>
                                             <Button type="submit" className="flex-1 bg-red-600 hover:bg-red-700">
@@ -386,11 +398,12 @@ export default function BookingPage() {
                         <div className="mx-auto max-w-3xl text-center">
                             <div className="flex flex-col items-center justify-center space-y-4">
                                 <div className="rounded-full bg-green-100 p-4">
-                                    <CheckCircle className="h-12 w-12 text-green-600" />
+                                    <CheckCircle className="h-12 w-12 text-green-600"/>
                                 </div>
                                 <h2 className="text-3xl font-bold">Appointment Confirmed!</h2>
                                 <p className="text-zinc-500 dark:text-zinc-400 max-w-[600px]">
-                                    Thank you for scheduling your appointment with Auto Repair Workshop. We've sent a confirmation email
+                                    Thank you for scheduling your appointment with Auto Repair Workshop. We've sent a
+                                    confirmation email
                                     to your inbox with all the details.
                                 </p>
                                 <div className="rounded-lg border p-6 w-full mt-4">
@@ -422,8 +435,9 @@ export default function BookingPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-2 justify-center mt-4">
-                                            <Clock className="h-5 w-5 text-red-600" />
-                                            <p className="text-sm">Please arrive 10 minutes before your scheduled appointment time.</p>
+                                            <Clock className="h-5 w-5 text-red-600"/>
+                                            <p className="text-sm">Please arrive 10 minutes before your scheduled
+                                                appointment time.</p>
                                         </div>
                                     </div>
                                 </div>
